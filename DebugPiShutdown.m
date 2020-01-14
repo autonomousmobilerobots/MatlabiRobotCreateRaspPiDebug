@@ -1,29 +1,29 @@
-function DebugPiShutdown(Ports)
+function DebugPiShutdown(Port)
 %
-%   The object 'serPort' must first be initialized with the 
+%   The object 'Port' must first be initialized with the 
 %   DebugPiInit command 
 %
 % By: Liran 1/2019
 
 % Before closing communication stop the robot in case it is moving
-SetFwdVelAngVelCreate(Ports.create, 0,0);
+SetFwdVelAngVelCreate(Port, 0,0);
 pause(1);
 
 % Send stop command to terminate the loop on the Pi
 data_to_send = ('stop');
-fwrite(Ports.create, data_to_send);
+fwrite(Port, data_to_send);
 pause(1);
  
  
  % Clean up
 try
     
-    if (strcmp(Ports.create.status,'open'))
-        fclose(Ports.create);
+    if (strcmp(Port.status,'open'))
+        fclose(Port);
         pause(0.1);
     end
     	
-    delete(Ports.create);
+    delete(Port);
     
 catch
     disp('WARNING:  Function did not terminate correctly.  Output may be unreliable.')
