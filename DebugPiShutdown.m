@@ -1,7 +1,7 @@
 function DebugPiShutdown(Ports)
 %
 %   The object 'serPort' must first be initialized with the 
-%   CreatePiInit command 
+%   DebugPiInit command 
 %
 % By: Liran 1/2019
 
