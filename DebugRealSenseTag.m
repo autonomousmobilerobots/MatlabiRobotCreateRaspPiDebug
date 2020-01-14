@@ -8,6 +8,8 @@
 %   the camera
 %   yaw = The orientation of the tag, in radians
 %   If no tag detected, return empty array
+%
+% serPort is a tcp port initialized by DebugPiInit
     
 %Flush Buffer    
 N = serPort.BytesAvailable();
