@@ -6,7 +6,7 @@ function port = DebugPiInit(remoteHost)
 %from Realsense camera
 %
 % remoteHost is a string with the name or IP address of the Pi
-% ex. Ports = CreatePiInit('192.168.1.141') or Ports = CreatePiInit('eve') 
+% ex. port = CreatePiInit('192.168.1.141') or Ports = CreatePiInit('eve') 
 %
 % The tcp/ip server must be running on the Raspberry Pi before running this
 % code.
