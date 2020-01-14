@@ -1,4 +1,4 @@
-function RealSenseImage(serPort, height);
+function DebugRealSenseImage(serPort, height)
 %RealSenseRGB(serPort) displays in a figure the current RGB image seen by
 %the RealSense camera. The output figure has a white horizontal line
 %indicating the region of the image as specified by the [height] inputted
