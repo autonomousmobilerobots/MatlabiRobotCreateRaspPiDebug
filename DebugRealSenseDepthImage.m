@@ -1,4 +1,4 @@
-function RealSenseDepthImage(serPort, height)
+function DebugRealSenseDepthImage(serPort, height)
 %RealSenseDepthImage(serPort) displays in a figure the current Depth image seen by
 %the RealSense camera. The output figure has a white horizontal line
 %indicating the region of the image as specified by the [height] inputted
